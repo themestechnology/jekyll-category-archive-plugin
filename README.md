@@ -1,14 +1,5 @@
 # Category archive plugin for Jekyll
 
-Generate a category archive like MovableType does.
-
-This code is based on following hacks:
-
-- https://gist.github.com/ilkka/707909
-- https://gist.github.com/ilkka/707020
-- https://gist.github.com/nlindley/6409459
-
-
 # Installation
 
 To use this plugin,
@@ -51,12 +42,16 @@ Would create a link to the category archive of `foo` with the content "This is a
 addition, if the name of a variable is specified instead of a category, the variable will be
 expanded every time the tag block is rendered.
 
+This code is based on following hacks:
+
+- https://github.com/shigeya/jekyll-category-archive-plugin
+- https://gist.github.com/ilkka/707909
+- https://gist.github.com/ilkka/707020
+- https://gist.github.com/nlindley/6409459
 
 # Copyright
 
 The MIT License (MIT)
-
-Copyright (c) 2013 Shigeya Suzuki
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
