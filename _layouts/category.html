@@ -1,0 +1,43 @@
+---
+layout: category
+---
+
+{% include header.html %}
+
+<!--start content -->
+<div class="row">
+
+<!--start main -->
+
+<main class="small-12 medium-9 large-9 columns" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement">
+
+          <!--start post block -->
+          <section class="row" itemscope itemtype="https://schema.org/ItemPage">
+
+            <div class="small-12 columns" >
+
+                <header class="entry-header">
+                  <h1 class="category-title" itemprop="headline">{{ page.title }}</h1>
+                </header>
+
+                <div class="entry-content" itemprop="text">
+
+                  {{ content }}
+
+                </div>
+
+            </div>
+
+          <section>
+          <!--end post block -->
+
+</main>
+<!--end main -->
+
+
+{% include sidebar-right.html %}
+
+</div>
+<!--end content -->
+
+{% include footer.html %}
