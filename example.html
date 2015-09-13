@@ -1,0 +1,52 @@
+// place this into your _layouts/post.html
+   
+    {% if page.categories != ''  %}
+    <span class="entry-categories small-12 columns ">
+
+      <b>Categories:</b>
+      <ul class="inline-list">
+
+        {% for sitecategory in site.categories %}
+
+          {% capture currentcatupper %}{{sitecategory | first | upcase }}{% endcapture %}
+
+          {% for postcategory in page.categories %}
+
+            {% capture postcategoryupper %}{{postcategory | upcase }}{% endcapture %}
+
+            {% if currentcatupper == postcategoryupper  %}
+                <li><a href="/{{sitecategory | first}}/" title="{{sitecategory | first }}" itemprop="url" ><span class="upercase" itemprop="name">{{sitecategory | first }}</span></a></li>
+            {% endif %}
+
+          {% endfor %}
+
+        {% endfor %}
+
+      </ul>
+    </span>
+    {% endif %}
+
+    {% if page.tags != ''  %}
+    <span class="entry-tags small-12 columns  ">
+      <b>Tags:</b>
+      <ul class="inline-list">
+
+        {% for sitetag in site.tags %}
+
+          {% capture currentcatupper %}{{sitetag | first | upcase }}{% endcapture %}
+
+          {% for posttag in page.tags %}
+
+            {% capture posttagupper %}{{posttag | upcase }}{% endcapture %}
+
+            {% if currentcatupper == posttagupper  %}
+                <li><a href="/{{sitetag | first}}/" title="{{sitetag | first }}" itemprop="url" ><span class="upercase" itemprop="name">{{sitetag | first }}</span></a></li>
+            {% endif %}
+
+          {% endfor %}
+
+        {% endfor %}
+
+      </ul>
+    </span>
+    {% endif %}
