@@ -18,10 +18,11 @@ Add these categorie and tags to all posts
 
 Place the below into the header below layout, title, date etc
 
----
+
 categories: ['Bread','Cat']
+
 tags: ['Noodles','Food']
----
+
 
 ## Parameter configuration
 
