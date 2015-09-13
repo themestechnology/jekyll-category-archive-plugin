@@ -1,17 +1,29 @@
-Categories + Tags archive plugin for Jekyll
+#Categories + Tags archive plugin for Jekyll
 
-# Installation
+## Installation
 
 To use this plugin,
 
-- Place the file `category_archive_plugin.rb` into `_plugins`
+- Place the files `category_archive_plugin.rb` and `tag_archive_plugin` into `_plugins`
 directory of Jekyll site working directory.
 
-- Copy `_layouts/category_archive.html` into `_layouts` directory of
+- Copy `_layouts/category_archive.html` and `_layouts/category.html` into `_layouts` directory of
 Jekyll site working directory, then edit it appropriately.
 
+YOU WILL NEED TO RESTART Jekyll
 
-# Parameter configuration
+## Post Setup
+
+Add these categorie and tags to all posts
+
+Place the below into the header below layout, title, date etc
+
+---
+categories: ['Bread','Cat']
+tags: ['Noodles','Food']
+---
+
+## Parameter configuration
 
 Archive layout can be specified by `layout` key in the `category_archive`
 site configuration. Default is `category_archive`.
@@ -25,7 +37,7 @@ If the `slugify` key is set to `true`, then category URLs will be slugified.
 ie: the url for "My Category" will be 'categories/my-category' not
 'categories/My%20Category'
 
-# Liquid variables for template
+## Liquid variables for template
 
 `page.category` contains the category name.
 
@@ -49,7 +61,7 @@ This code is based on following hacks:
 - https://gist.github.com/ilkka/707020
 - https://gist.github.com/nlindley/6409459
 
-# Copyright
+## Copyright
 
 The MIT License (MIT)
 
