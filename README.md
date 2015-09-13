@@ -1,4 +1,4 @@
-# Categorys + Tags archive plugin for Jekyll
+Categories + Tags archive plugin for Jekyll
 
 # Installation
 
